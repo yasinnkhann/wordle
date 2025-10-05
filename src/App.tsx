@@ -129,10 +129,10 @@ function App() {
 						setCurrentLetterIndex(0);
 					} else {
 						alert(`Game over! The solution was: ${solution}`);
-						setCurrentGuessIndex(6);
+						setCurrentGuessIndex(MAX_ROW_LENGTH);
 					}
 				} else {
-					alert('Guess must be 5 letters long!');
+					alert(`Guess must be ${MAX_COL_LENGTH} letters long!`);
 				}
 			}
 		},
